@@ -1,1 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MyFinances TTU – Welcome / Log in</title>
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <a class="logo" href="index.html" aria-label="MyFinances TTU home">MyFinances <span>TTU</span></a>
+    <nav aria-label="Main navigation">
+      <ul class="nav-list">
+        <li><a href="index.html" aria-current="page">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#resources">Resources</a></li>
+        <li><a href="index.html#login">Log in</a></li>
+        <li><a class="btn btn-outline" href="signup.html">Sign Up</a></li>
+      </ul>
+    </nav>
+  </header>
 
+  <main class="login-page">
+    <section class="hero" aria-labelledby="hero-heading">
+      <h1 id="hero-heading">Take control<br>of your money.</h1>
+      <p class="hero-audience">For Texas Tech students</p>
+      <p class="hero-text">Simple tools for smarter spending, better saving, and a brighter tomorrow.</p>
+
+      <div class="hero-art" role="img" aria-label="Bar chart showing savings growing next to the Texas Tech TT badge">
+        <span class="bar bar-1"></span>
+        <span class="bar bar-2"></span>
+        <span class="bar bar-3"></span>
+        <span class="bar bar-4"></span>
+        <span class="badge">TT</span>
+      </div>
+
+      <p class="hero-tagline">Plan today. Red Raiders tomorrow.</p>
+    </section>
+
+    <section class="login-card" id="login" aria-labelledby="login-heading">
+      <h2 id="login-heading">Welcome back!</h2>
+      <p class="login-intro">Log in to continue your financial journey.</p>
+
+      <form class="login-form" action="dashboard.html">
+        <label for="email">Email</label>
+        <input type="email" id="email" placeholder="you@ttu.edu" autocomplete="email" required>
+
+        <label for="password">Password</label>
+        <input type="password" id="password" placeholder="Enter your password" autocomplete="current-password" required>
+
+        <a class="forgot-link" href="#login">Forgot password?</a>
+
+        <button type="submit" class="btn btn-primary">Log In</button>
+
+        <p class="divider"><span>or</span></p>
+
+        <button type="button" class="btn btn-secondary">Continue with Google</button>
+      </form>
+
+      <p class="signup-prompt">Don't have an account? <a href="signup.html">Sign Up</a></p>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <p>&copy; 2026 MyFinances TTU &middot; Team Beta 2</p>
+  </footer>
+</body>
+</html>
