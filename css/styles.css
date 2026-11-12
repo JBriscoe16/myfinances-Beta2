@@ -1,3 +1,5 @@
+/* Index.html page styling */
+
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap");
 
 /* ===== Shared: variables and reset (all pages) ===== */
@@ -373,4 +375,125 @@ input:focus-visible {
   .site-footer {
     padding: 24px 16px;
   }
+}
+
+
+/*Signup.html page styling*/
+
+.signup-page {
+    display: flex;
+    gap: 24px;
+    max-width: 1400px;
+    margin: 40px auto;
+    padding: 0 40px;
+    align-items: flex-start;
+}
+
+.signup-intro {
+    flex: 1;
+    padding-top: 20px;
+}
+
+.signup-intro h1 {
+    font-size: 36px;
+    margin-bottom: 12px;
+}
+
+.signup-intro p {
+    color: var(--muted);
+    margin-bottom: 20px;
+}
+
+.signup-art {
+    background: #cc0000;
+    color: white;
+    font-size: 72px;
+    font-weight: bold;
+    text-align: center;
+    padding: 50px 10px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+}
+
+.signup-intro h3 {
+    margin-top: 12px;
+}
+
+.signup-card {
+    flex: 2;
+    padding: 24px;
+    border: 1px solid var(--border);
+    border-radius: 8px;
+}
+
+.signup-card h2 {
+    margin-bottom: 8px;
+}
+
+.signup-card > p {
+    color: var(--muted);
+    margin-bottom: 20px;
+}
+
+.signup-form label {
+    display: block;
+    margin: 14px 0 6px;
+    font-weight: bold;
+}
+
+.signup-form input {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid var(--border);
+    border-radius: 8px;
+    font: inherit;
+}
+
+.signup-form h3 {
+    margin-top: 24px;
+}
+
+.signup-form h4 {
+    margin: 24px 0 6px;
+}
+
+.signup-form p {
+    margin-bottom: 12px;
+}
+
+.signup-form .btn {
+    margin-top: 12px;
+}
+
+.signup-profile {
+    flex: 1;
+    padding: 24px;
+    border: 1px solid var(--border);
+    border-radius: 8px;
+}
+
+.signup-profile h2,
+.signup-profile h3 {
+    margin-bottom: 12px;
+}
+
+.signup-profile ul {
+    margin: 12px 0 20px 20px;
+}
+
+.signup-profile li {
+    margin-bottom: 10px;
+}
+
+@media (max-width: 900px) {
+    .signup-page {
+        flex-direction: column;
+        padding: 0 24px;
+    }
+
+    .signup-intro,
+    .signup-card,
+    .signup-profile {
+        width: 100%;
+    }
 }

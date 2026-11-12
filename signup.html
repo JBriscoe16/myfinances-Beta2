@@ -1,1 +1,122 @@
 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up - MyFinances TTU</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+    <header class="site-header">
+        <a class="logo" href="index.html">MyFinances <span>TTU</span></a>
+        <nav>
+            <ul class="nav-list">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="index.html#about">About</a></li>
+                <li><a href="index.html#resources">Resources</a></li>
+                <li><a href="index.html#login">Log in</a></li>
+                <li><a class="btn btn-outline" href="signup.html">Sign Up</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="signup-page">
+        <section class="signup-intro">
+            <h1>Create your account</h1>
+            <p>Start your financial journey at Texas Tech.</p>
+
+            <div class="signup-art">TT</div>
+
+            <h3>Plan your money.</h3>
+            <h3>Build better habits.</h3>
+        </section>
+
+        <section class="signup-card">
+            <h2>Tell us about yourself</h2>
+            <p>Set up your account and initial budget.</p>
+
+            <form class="signup-form" action="dashboard.html">
+                <label for="fullname">Full Name</label>
+                <input type="text" id="fullname" name="fullname"
+                       placeholder="Full name" required>
+
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email"
+                       placeholder="Texas Tech email (you@ttu.edu)" required>
+
+                <label for="password">Password</label>
+                <input type="password" id="password" name="password"
+                       placeholder="Password" required>
+
+                <label for="confirm-password">Confirm Password</label>
+                <input type="password" id="confirm-password"
+                       name="confirm-password"
+                       placeholder="Confirm password" required>
+
+                <h3>Set up your monthly budget</h3>
+
+                <label for="income">Monthly Income</label>
+                <input type="number" id="income" name="income"
+                       placeholder="Monthly income (job, family, financial aid)">
+
+                <label for="housing">Housing / Rent</label>
+                <input type="number" id="housing" name="housing"
+                       placeholder="Housing / Rent">
+
+                <label for="food">Food Budget</label>
+                <input type="number" id="food" name="food"
+                       placeholder="Meal plan or food budget">
+
+                <label for="books">Books / School Supplies</label>
+                <input type="number" id="books" name="books"
+                       placeholder="Books / School supplies">
+
+                <label for="transport">Transportation</label>
+                <input type="number" id="transport" name="transport"
+                       placeholder="Transportation (gas, bus, etc.)">
+
+                <label for="buffer">Unexpected Expenses</label>
+                <input type="number" id="buffer" name="buffer"
+                       placeholder="Buffer for unexpected expenses">
+
+                <label for="goal">Savings Goal</label>
+                <input type="number" id="goal" name="goal"
+                       placeholder="Initial budget goal (e.g. save $500)">
+
+                <h4>Connect your bank (optional)</h4>
+                <p>Pull in transactions so you never type them by hand.</p>
+                <button type="button" class="btn btn-secondary">Connect</button>
+
+                <p>
+                    <button type="submit" class="btn btn-primary">Create Account</button>
+                </p>
+            </form>
+        </section>
+
+        <aside class="signup-profile">
+            <h2>Student Profile</h2>
+            <p>Texas Tech Student</p>
+
+            <h3>Campus Budget Setup</h3>
+
+            <ul>
+                <li>Housing</li>
+                <li>Food / Meal Plan</li>
+                <li>Books and Supplies</li>
+                <li>Transportation</li>
+                <li>Buffer (unexpected)</li>
+                <li>Savings Goal</li>
+            </ul>
+
+            <p>Customize your budget with common Texas Tech expenses!</p>
+        </aside>
+    </main>
+
+    <footer class="site-footer">
+        <p>&copy; 2026 MyFinances TTU &middot; Team Beta 2</p>
+    </footer>
+
+</body>
+</html>
