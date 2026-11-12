@@ -1,1 +1,195 @@
 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Monthly Budgets - MyFinances TTU</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+    <header class="site-header">
+        <a class="logo" href="index.html">
+            MyFinances <span>TTU</span>
+        </a>
+
+        <nav>
+            <ul class="nav-list">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="budgets.html" class="budget-active">Budgets</a></li>
+                <li><a href="goals.html">Goals</a></li>
+                <li><a href="profile.html">Profile</a></li>
+            </ul>
+        </nav>
+
+        <p>AJ &nbsp; Alex</p>
+    </header>
+
+    <main class="budget-page">
+
+        <section class="budget-heading">
+            <div>
+                <h1>Monthly Budgets</h1>
+                <p>Set limits, track your spending, and stay on track.</p>
+            </div>
+
+            <select aria-label="Select month">
+                <option>May 2024</option>
+                <option>April 2024</option>
+                <option>March 2024</option>
+            </select>
+
+            <div class="budget-alert">
+                <strong>! &nbsp; You're over budget!</strong>
+                <p>You spent $310 on Food (limit: $300).</p>
+            </div>
+        </section>
+
+        <section class="budget-card">
+
+            <div class="budget-row">
+                <strong>Housing</strong>
+                <div class="budget-bar">
+                    <div class="budget-fill housing-bar"></div>
+                </div>
+                <strong>$720 / $800</strong>
+            </div>
+
+            <div class="budget-row">
+                <strong class="budget-red">Food</strong>
+                <div class="budget-bar">
+                    <div class="budget-fill food-bar"></div>
+                </div>
+                <strong class="budget-red">$310 / $300</strong>
+            </div>
+
+            <div class="budget-row">
+                <strong>Transportation</strong>
+                <div class="budget-bar">
+                    <div class="budget-fill transport-bar"></div>
+                </div>
+                <strong>$60 / $100</strong>
+            </div>
+
+            <div class="budget-row">
+                <strong>Books</strong>
+                <div class="budget-bar">
+                    <div class="budget-fill books-bar"></div>
+                </div>
+                <strong>$120 / $300</strong>
+            </div>
+
+            <div class="budget-row">
+                <strong>Fun / Entertainment</strong>
+                <div class="budget-bar">
+                    <div class="budget-fill fun-bar"></div>
+                </div>
+                <strong>$90 / $200</strong>
+            </div>
+
+            <div class="budget-row">
+                <strong>Buffer (unexpected)</strong>
+                <div class="budget-bar">
+                    <div class="budget-fill buffer-bar"></div>
+                </div>
+                <strong>$40 / $150</strong>
+            </div>
+
+        </section>
+
+        <section class="transactions">
+
+            <div class="transactions-heading">
+                <div>
+                    <h2>Recent Transactions</h2>
+                    <p>See and categorize your spending.</p>
+                </div>
+
+                <input type="search"
+                       placeholder="Search merchant, date, or amount"
+                       aria-label="Search transactions">
+
+                <select aria-label="Select account">
+                    <option>All accounts</option>
+                    <option>Checking</option>
+                    <option>Credit card</option>
+                </select>
+
+                <select aria-label="Select category">
+                    <option>Category</option>
+                    <option>Food</option>
+                    <option>Housing</option>
+                    <option>Transportation</option>
+                    <option>Books</option>
+                </select>
+
+                <button type="button" class="btn btn-primary budget-add">
+                    + Add Expense
+                </button>
+            </div>
+
+            <table class="budget-table">
+                <thead>
+                    <tr>
+                        <th>Date</th>
+                        <th>Merchant</th>
+                        <th>Category</th>
+                        <th>Account</th>
+                        <th>Amount</th>
+                    </tr>
+                </thead>
+
+                <tbody>
+                    <tr>
+                        <td>May 6</td>
+                        <td>Chick-fil-A</td>
+                        <td>Food</td>
+                        <td>Checking</td>
+                        <td>-$8.75</td>
+                    </tr>
+
+                    <tr>
+                        <td>May 5</td>
+                        <td>Target</td>
+                        <td>Housing</td>
+                        <td>Credit card</td>
+                        <td>-$32.10</td>
+                    </tr>
+
+                    <tr>
+                        <td>May 4</td>
+                        <td>Shell Gas</td>
+                        <td>Transportation</td>
+                        <td>Credit card</td>
+                        <td>-$24.50</td>
+                    </tr>
+
+                    <tr>
+                        <td>May 3</td>
+                        <td>Amazon</td>
+                        <td>Books</td>
+                        <td>Checking</td>
+                        <td>-$56.99</td>
+                    </tr>
+
+                    <tr>
+                        <td>May 1</td>
+                        <td>Cinemark</td>
+                        <td>Fun / Entertainment</td>
+                        <td>Credit card</td>
+                        <td>-$14.00</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+    </main>
+
+    <footer class="site-footer">
+        <p>&copy; 2026 MyFinances TTU &middot; Team Beta 2</p>
+    </footer>
+
+</body>
+</html>
+

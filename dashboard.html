@@ -1,1 +1,222 @@
 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard - MyFinances TTU</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+    <header class="site-header">
+        <a class="logo" href="index.html">
+            MyFinances <span>TTU</span>
+        </a>
+        <p class="dashboard-user">AJ &nbsp; Alex Johnson</p>
+    </header>
+
+    <div class="dashboard-layout">
+
+        <aside class="dashboard-sidebar">
+            <nav>
+                <ul>
+                    <li><a class="dashboard-selected" href="dashboard.html">Dashboard</a></li>
+                    <li><a href="budgets.html">Budgets</a></li>
+                    <li><a href="#expenses">Expenses</a></li>
+                    <li><a href="#income">Income</a></li>
+                    <li><a href="goals.html">Goals</a></li>
+                    <li><a href="#resources">Resources</a></li>
+                </ul>
+            </nav>
+        </aside>
+
+        <main class="dashboard-main">
+
+            <section class="dashboard-welcome">
+                <div>
+                    <h1>Welcome back, Alex!</h1>
+                    <p>Here's a quick look at your finances this month.</p>
+                </div>
+                <span class="dashboard-connected">
+                    ● Bank connected · auto sorted
+                </span>
+            </section>
+
+            <section class="dashboard-summary">
+
+                <div class="dashboard-box">
+                    <p>Total Balance</p>
+                    <h2>$1,240 <span>+12%</span></h2>
+                </div>
+
+                <div class="dashboard-box">
+                    <p>Monthly Spending</p>
+                    <h2>$850 <span>+8%</span></h2>
+                </div>
+
+                <div class="dashboard-box">
+                    <p>Savings</p>
+                    <h2>$400 <span>+20%</span></h2>
+                </div>
+
+                <div class="dashboard-box">
+                    <p>Budget Left</p>
+                    <h2>$350 <small>of $1,200</small></h2>
+                </div>
+
+            </section>
+
+            <section class="dashboard-grid">
+
+                <div class="dashboard-card">
+                    <div class="dashboard-card-title">
+                        <h3>Spending by Category</h3>
+                        <p>This Month</p>
+                    </div>
+
+                    <div class="dashboard-chart">
+                        <div class="dashboard-chart-item">
+                            <div class="dashboard-column chart-housing"></div>
+                            <p>Housing</p>
+                        </div>
+
+                        <div class="dashboard-chart-item">
+                            <div class="dashboard-column chart-food"></div>
+                            <p>Food</p>
+                        </div>
+
+                        <div class="dashboard-chart-item">
+                            <div class="dashboard-column chart-books"></div>
+                            <p>Books</p>
+                        </div>
+
+                        <div class="dashboard-chart-item">
+                            <div class="dashboard-column chart-transport"></div>
+                            <p>Transport</p>
+                        </div>
+
+                        <div class="dashboard-chart-item">
+                            <div class="dashboard-column chart-fun"></div>
+                            <p>Fun</p>
+                        </div>
+
+                        <div class="dashboard-chart-item">
+                            <div class="dashboard-column chart-buffer"></div>
+                            <p>Buffer</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="dashboard-card">
+                    <div class="dashboard-card-title">
+                        <h3>Recent Transactions</h3>
+                        <a href="budgets.html">View All</a>
+                    </div>
+
+                    <div class="dashboard-transaction">
+                        <div>
+                            <strong>The Grove Apartments</strong>
+                            <p>Housing · auto sorted</p>
+                        </div>
+                        <span>Apr 3</span>
+                        <strong>-$725</strong>
+                    </div>
+
+                    <div class="dashboard-transaction">
+                        <div>
+                            <strong>Chick-fil-A</strong>
+                            <p>Food · auto sorted</p>
+                        </div>
+                        <span>Apr 2</span>
+                        <strong>-$12</strong>
+                    </div>
+
+                    <div class="dashboard-transaction">
+                        <div>
+                            <strong>TTU Bookstore</strong>
+                            <p>Books · auto sorted</p>
+                        </div>
+                        <span>Apr 1</span>
+                        <strong>-$58</strong>
+                    </div>
+
+                    <div class="dashboard-transaction">
+                        <div>
+                            <strong>City Bus Pass</strong>
+                            <p>Transport · auto sorted</p>
+                        </div>
+                        <span>Mar 30</span>
+                        <strong>-$25</strong>
+                    </div>
+
+                    <div class="dashboard-transaction">
+                        <div>
+                            <strong>Cinemark</strong>
+                            <p>Fun · auto sorted</p>
+                        </div>
+                        <span>Mar 29</span>
+                        <strong>-$16</strong>
+                    </div>
+
+                    <div class="dashboard-transaction">
+                        <div>
+                            <strong>Part-time Job</strong>
+                            <p>Income · auto sorted</p>
+                        </div>
+                        <span>Mar 28</span>
+                        <strong class="dashboard-positive">+$450</strong>
+                    </div>
+                </div>
+
+                <div class="dashboard-card">
+                    <div class="dashboard-card-title">
+                        <h3>Upcoming Charges</h3>
+                        <p>Next 7 days</p>
+                    </div>
+
+                    <div class="dashboard-charge">
+                        <span class="dashboard-charge-icon">S</span>
+                        <strong>Spotify</strong>
+                        <span>Apr 6</span>
+                        <strong>$5.99</strong>
+                    </div>
+
+                    <div class="dashboard-charge">
+                        <span class="dashboard-charge-icon">N</span>
+                        <strong>Netflix</strong>
+                        <span>Apr 8</span>
+                        <strong>$15.49</strong>
+                    </div>
+
+                    <div class="dashboard-charge">
+                        <span class="dashboard-charge-icon">i</span>
+                        <strong>iCloud storage</strong>
+                        <span>Apr 9</span>
+                        <strong>$2.99</strong>
+                    </div>
+                </div>
+
+                <div class="dashboard-card">
+                    <div class="dashboard-card-title">
+                        <h3>Quick Actions</h3>
+                    </div>
+
+                    <div class="dashboard-actions">
+                        <button type="button" class="dashboard-add">
+                            Add Expense
+                        </button>
+
+                        <div class="dashboard-action-row">
+                            <button type="button">Add Income</button>
+                            <a href="budgets.html">View Budgets</a>
+                        </div>
+                    </div>
+                </div>
+
+            </section>
+        </main>
+    </div>
+
+</body>
+</html>
